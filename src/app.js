@@ -7,7 +7,7 @@ app.use(express.json());
 
 
 app.get('/api/get-env', (req, res) => {
- const number = process.env.number
+ const number = process.env.NUMBER;
  if (number) {
      res.status(200).json({ number: number});
  }
